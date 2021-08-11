@@ -1,0 +1,132 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Lucida Grande", "Arial", sans-serif;
+}
+
+.main-content {
+  width: 1600px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-cameras {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.wrapper-main-camera {
+  flex-shrink: 0;
+
+  width: 1280px;
+  height: 720px;
+
+  border: 1px solid black;
+}
+
+.main-camera {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+
+  background-color: darkgrey;
+
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.4);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.4);
+  box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.4);
+}
+
+.wrapper-list-camera {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.secondary-camera {
+  width: 260px;
+
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: darkgrey;
+
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.4);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.4);
+  box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.4);
+
+  transition: box-shadow, width, 0.15s;
+}
+
+.secondary-camera:hover {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 1);
+  box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 1);
+}
+
+.wrapper-canvas {
+  position: relative;
+}
+
+.image {
+  position: absolute;
+}
+
+.canvas {
+  position: absolute;
+  border: 1px solid brown;
+}
+
+.control-panel {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+
+  background-color: cadetblue;
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+  font-size: 16px;
+
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.4);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.4);
+  box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.4);
+
+  transition: background-color, box-shadow, 0.15s;
+}
+
+.btn:hover {
+  background-color: rgb(56, 216, 221);
+
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 1);
+  box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 1);
+}
+
+.btn:active {
+  background-color: rgb(221, 150, 56);
+}
+
+.btn:focus {
+  border: none;
+  outline: none;
+}
